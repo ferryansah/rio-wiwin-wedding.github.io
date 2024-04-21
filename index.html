@@ -1,0 +1,468 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>riwin-wedding</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- font -->
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&family=Work+Sans:wght@100;400;600;700&display=swap"
+        rel="stylesheet">
+
+
+    <!-- countdown -->
+    <link rel="stylesheet" href="countdown/simplyCountdown.theme.default.css" />
+    <script src="countdown/simplyCountdown.min.js"></script>
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- css internal -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- css navbar -->
+    <link rel="stylesheet" href="css-navbar/navbar.css">
+
+    <!-- navigasi tombol -->
+    <!-- <link rel="stylesheet" href="css-navbar/navigasi-tombol.css"> -->
+</head>
+
+<body>
+
+    <section id="hero"
+        class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center text-white align-items-center">
+        <div class="image-card">
+            <div class="card">
+                <img style="opacity: 1;" src="img/image-card.png" alt=""
+                    class="img-responsive rounded mx-auto d-block w-100">
+            </div>
+            <div class="card">
+                <img style="opacity: 1;" src="img/image-card-2.png" alt=""
+                    class="img-responsive rounded mx-auto d-block w-100">
+            </div>
+            <div class="card">
+                <img style="opacity: 1;" src="img/image-card-3.png" alt=""
+                    class="img-responsive rounded mx-auto d-block w-100">
+            </div>
+        </div>
+        <main>
+            <h4>kepada Bapak/Ibu/Saudara/i</h4>
+            <p>Kami akan melangsungkan pernikahan dalam:</p>
+            <div class="simply-countdown" id="simply-countdown"></div>
+            <h1>Muhammad Subandrio</h1>
+            <h1>&</h1>
+            <h1>Wiwin Sulastry</h1>
+            <a href="#home" class="btn btn-lg mt-4" onClick="enableScroll()">Lihat undangan</a>
+        </main>
+    </section>
+
+    <nav class="mynavbar bg-transparent sticky-top align-items-center">
+        <div class="logo">
+            <a href="#" class="navbar-brand">Riwin wedding</a>
+        </div>
+
+        <ul class="nav">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#information">Info</a></li>
+            <li><a href="#story">Story</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#gifts">gifts</a></li>
+        </ul>
+
+        <div class="menu-toggle">
+            <input type="checkbox">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+
+
+    <section id="home" class="home">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 text-center">
+                    <h2>acara pernikahan</h2>
+                    <h3>Diselenggrakan pada 28 April 2024 di SMK Cendekia kota Cirebon</h3>
+                    <p>Oleh karena itu, dengan segala hormat, kami bermaksud untuk mengundang Bapak/Ibu/saudara/i, untuk
+                        hadir pada acara pernikahan kami</p>
+                </div>
+            </div>
+
+            <div class="row couple mt-4">
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-8 text-end">
+                            <h3>Muhammad Subandrio</h3>
+                            <p>Saya adalah seorang laki-laki, anak dari Bapak yanto dan saya adalah seorang juru kamera
+                                professional/professional fotografer.</p>
+                            <p>Putra dari Bapak Zaky <br> dan <br> ibu Alya</p>
+                        </div>
+
+                        <div class="col-4">
+                            <img src="img/profil-rio.png" alt="Muhammad Subandrio"
+                                class="img-responsive rounded-circle">
+                        </div>
+                    </div>
+                </div>
+
+                <span class="heart"><i class="bi bi-arrow-through-heart-fill"></i></span>
+
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-4">
+                            <img src="img/profil-wiwin.png" alt="Wiwin" class="img-responsive rounded-circle">
+                        </div>
+
+                        <div class="col-8">
+                            <h3>Wiwin Sulastry</h3>
+                            <p>Saya adalah seorang wanita yang rendah hati dan juga saya adalah seorang perawat.</p>
+                            <p>Putra dari Bapak Akhsan <br> dan <br> ibu Tia</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="information" class="info mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-10 text-center text-white">
+                <h3>informasi acara</h3>
+                <p class="alamat">Alamat: Jl. Pelandakan, RT./RW/RW.02/07, Harjamukti, Kec. Harjamukti, Kota Cirebon</p>
+                <a class="btn bt-sm btn-light my-3" target="_blank"
+                    href="https://maps.app.goo.gl/1oT3EZso6XisAmfYA">klik
+                    untuk membuka peta</a>
+                <p class="description">Diharapkan untuk tidak salah alamat dan tanggal. Manakala saat tiba di tujuan
+                    tidak
+                    ada tanda-tanda acara sedang dilangsungkan nya pernikahan, bisa jadi anda salah jadwal atau tempat.
+                </p>
+            </div>
+        </div>
+
+        <div class="row justify-content-center mt-4">
+            <div class="col-md-5 col-10 mb-4">
+                <div class="card text-center text-bg-light">
+                    <div class="card-header">
+                        AKAD NIKAH
+                    </div>
+                    <div class="card-body">
+                        <div class="row justify-content-center">
+                            <div class="col-md-6">
+                                <i class="bi bi-clock-fill d-block"></i>
+                                <span>08.30-10.20</span>
+                            </div>
+                            <div class="col-md-6">
+                                <i class="bi bi-calendar3 d-block"></i>
+                                <span>28 April 2024</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        Saat acara akad Diharapkan untuk kondusif menjaga kekhidmatan dan kekhusyuan seluruh prosesi
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-5 col-10">
+                <div class="card text-center text-bg-light">
+                    <div class="card-header">
+                        RESEPSI
+                    </div>
+                    <div class="card-body">
+                        <div class="row justify-content-center">
+                            <div class="col-md-6">
+                                <i class="bi bi-clock-fill d-block"></i>
+                                <span>10.20-16.00</span>
+                            </div>
+                            <div class="col-md-6">
+                                <i class="bi bi-calendar3 d-block"></i>
+                                <span>28 April 2024</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        Saat acara resepsi Diharapkan untuk tetap tenang dan di mohon untuk tidak memicu keributan
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="story" class="story">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-10 text-center">
+                    <span>Bagaimana Cinta Kami Bersemi</span>
+                    <h2>Cerita Kami</h2>
+                    <p>Awal nya kami bertemu di sebuah sekolah dan yang kebetulan sekolah kami itu sama, lalu kami
+                        berkenalan satu sama lain dan sampailah hingga bertunangan.</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <ul class="timeline">
+                        <li>
+                            <div class="timeline-image" style="background-image: url(img/image-card-5.png);"></div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h3>Pertama bertemu</h3>
+                                    <span>1 Agustus 2021</span>
+                                </div>
+                                <div class="timeline-body">
+                                    <p>Awal nya kami bertemu di sebuah sekolah dan yang kebetulan sekolah kami itu sama,
+                                        lalu kami berkenalan satu sama lain.</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="timeline-inverted">
+                            <div class="timeline-image" style="background-image: url(img/image-card-3.png);"></div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h3>Mulai Serius</h3>
+                                    <span>24 Januari 2022</span>
+                                </div>
+                                <div class="timeline-body">
+                                    <p>Dan pada tanggal 24 jan 2022 kami mulai serius menjalin hubungan ini, dan kami
+                                        juga mulai menjaga hati satu sama lain.</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="timeline-image" style="background-image: url(img/image-card-2.png);"></div>
+                            <div class="timeline-panel mt-2">
+                                <div class="timeline-heading">
+                                    <h3>Tunangan</h3>
+                                    <span>20 April 2024</span>
+                                </div>
+                                <div class="timeline-body">
+                                    <p>Pada tanggal 20 april 2024 kami mulai bertunangan juga sudah berniat dan siap
+                                        untuk menikah.</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-10 text-center">
+                    <span>Memory Kisah Kami</span>
+                    <h2>Galeri Foto</h2>
+                    <p>inilah beberapa foto atau memory kami</p>
+                </div>
+            </div>
+
+            <div class="row row-cols-lg-5 row-cols-md-4 row-cols-sm-3 row-cols-2 justify-content-center">
+                <div class="col mt-3">
+                    <img src="img/image-card.png" alt="rio dan Wiwin" class="img-fluid w-100 rounded">
+                </div>
+                <div class="col mt-3">
+                    <img src="img/image-card-2.png" alt="rio dan Wiwin" class="img-fluid w-100 rounded">
+                </div>
+                <div class="col mt-3">
+                    <img src="img/image-card-3.png" alt="rio dan Wiwin" class="img-fluid w-100 rounded">
+                </div>
+                <div class="col mt-3">
+                    <img src="img/image-card-4.png" alt="rio dan Wiwin" class="img-fluid w-100 rounded">
+                </div>
+                <div class="col mt-3">
+                    <img src="img/image-card-5.png" alt="rio dan Wiwin" class="img-fluid w-100 rounded">
+                </div>
+            </div>
+    </section>
+
+    <section id="rsvp" class="rsvp">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-10 text-center">
+                    <h2>Konfirmasi Kehadiran</h2>
+                    <p>Isi form di bawah ini untuk melakukan konfirmasi Kehadiran.</p>
+                </div>
+            </div>
+
+            <form class="row row-cols-md-auto g-3 align-items-center justify-content-center" method="POST"
+                action="https://script.google.com/macros/s/AKfycbxg6LnsfqeQA5PtQj-FWgoYyMTfxfrj2Y5_fJHUVXLsUyGbMDIccXW1V8icMJYlqgWo/exec"
+                id="my-form">
+                <div class="col-12">
+                    <div class="mb-3">
+                        <label for="nama" class="form-label">nama</label>
+                        <input type="text" class="form-control" name="nama" id="nama">
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <div class="mb-3">
+                        <label for="jumlah" class="form-label">Jumlah</label>
+                        <input type="number" class="form-control" name="jumlah" id="jumlah" min="1" max="200" length="1"
+                            value="1">
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <div class="mb-3">
+                        <label for="status" class="form-label">konfirmasi</label>
+                        <select name="status" id="status" class="form-select">
+                            <option selected>
+                                pilih salah satu
+                            </option>
+                            <option value="Hadir">Hadir</option>
+                            <option value="Tidak Hadir">Tidak Hadir</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="col-12" style="margin-top: 35px;">
+                    <button class="btn btn-primary">kirim</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section id="gifts" class="gifts">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-10 text-center">
+                    <span>ungkapan tanda kasih</span>
+                    <h2>Kirim Hadiah</h2>
+                    <p>If you wanna gifts me, gifts to pulsa or dana.</p>
+                </div>
+            </div>
+
+            <div class="row justify-content-center text-center">
+                <div class="col-md-6">
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <div class="fw-bold">DANA</div>
+                            085172016214 - SUBANDRIO
+                        </li>
+                        <li class="list-group-item">
+                            <div class="fw-bold">PULSA</div>
+                            085172016214 - SUBANDRIO
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <small class="block">&copy; 2024 Riwin Wedding. All Rights Reversed.</small>
+                    <small class="block">Building website by <a
+                            href="https://www.instagram.com/_azu.os?igsh=ZGUzMzM3NWJiOQ==">@ferryansah</a>.</small>
+
+                    <ul class="mt-3">
+                        <li><a href="https://www.instagram.com/_azu.os?igsh=ZGUzMzM3NWJiOQ=="><i
+                                    class="bi bi-instagram"></i></a> </li>
+                        <li><a href="https://www.instagram.com/_azu.os?igsh=ZGUzMzM3NWJiOQ=="><i
+                                    class="bi bi-youtube"></i></a> </li>
+                        <li><a href="https://www.instagram.com/_azu.os?igsh=ZGUzMzM3NWJiOQ=="><i
+                                    class="bi bi-facebook"></i></a> </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        simplyCountdown('.simply-countdown', {
+            year: 2024, // required
+            month: 4, // required
+            day: 28, // required
+            hours: 7, // Default is 0 [0-23] integer
+            words: { //words displayed into the countdown
+                days: { singular: 'hari', plural: 'hari' },
+                hours: { singular: 'jam', plural: 'jam' },
+                minutes: { singular: 'menit', plural: 'menit' },
+                seconds: { singular: 'second', plural: 'seconds' }
+            },
+        });
+    </script>
+
+
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle input');
+        const nav = document.querySelector('nav ul');
+
+        menuToggle.addEventListener('click', function () {
+            nav.classList.toggle('slide');
+        });
+    </script>
+
+    <script>
+        const rootElement = document.querySelector(":root");
+        function disableScroll() {
+            scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+
+            window.onscroll = function () {
+                window.scrollTo(scrollTop, scrollLeft);
+            }
+
+            rootElement.style.scrollBehavior = 'auto';
+        }
+
+        function enableScroll() {
+            window.onscroll = function () {
+                rootElement.style.scrollBehavior = 'smooth';
+             }
+        }
+
+        disableScroll()
+    </script>
+
+    <script>
+        window.addEventListener("load", function () {
+            const form = document.getElementById('my-form');
+            form.addEventListener("submit", function (e) {
+                e.preventDefault();
+                const data = new FormData(form);
+                const action = e.target.action;
+                fetch(action, {
+                    method: 'POST',
+                    body: data,
+                })
+                    .then(() => {
+                        alert("Konfirmasi kehadiran berhasih terkirim!");
+                    })
+            });
+        });
+
+    </script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

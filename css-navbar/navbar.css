@@ -1,0 +1,147 @@
+:root{
+    --pink: #f14e95;
+    --bg: #0f0f0f;
+    --shadow: 0 2px 2px rgb(0 0 0 / 0.5);
+}
+
+nav {
+    display: flex;
+    background-color: var(--pink);
+    color: rgb(46, 24, 66);
+    padding: 6px 0;
+    justify-content: space-around;
+    align-items: center;
+    margin: -12px 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(22, 22, 22);
+}
+
+nav ul li a:hover {
+    color: var(--pink);
+    text-decoration: underline;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    height: 28px;
+    justify-content: space-between;
+    margin-right: -50px;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    border-radius: 8px;
+    background: var(--pink);
+    position: relative;
+    transition: all 600ms;
+}
+
+.menu-toggle input {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    opacity: 0;
+    z-index: 2;
+    cursor: pointer;
+}
+
+/* animasi menu toggle */
+
+.menu-toggle span:nth-child(2) {
+    transform-origin: 0 0;
+}
+
+.menu-toggle span:last-child {
+    transform-origin: 0 100%;
+}
+
+
+.menu-toggle input:checked~span:nth-child(2) {
+    transform: rotate(45deg) translate(3px, 4px);
+    background-color: white;
+}
+
+.menu-toggle input:checked~span:nth-child(3) {
+    opacity: 0;
+    transform: scale(0);
+}
+
+.menu-toggle input:checked~span:last-child {
+    background-color: white;
+    transform: rotate(-45deg) translate(0, -2px);
+}
+
+
+
+
+/* responsive break point */
+
+/* ukuran tablet */
+
+
+
+@media screen and (max-width: 768px) {
+    nav ul {
+        width: 50%;
+    }
+
+    .persegi {
+        display: none;
+    }
+}
+
+/* ukuran mobile */
+@media screen and (max-width: 600px) {
+    nav ul {
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100vh;
+        width: 50%;
+        background-color: var(--pink);
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        transform: translateX(100%);
+        opacity: 0;
+        transition: all 1s;
+        color: white;
+    }
+
+    .persegi {
+        height: 52px;
+    }
+
+    nav ul.slide {
+        /* background-color: #333; */
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    nav ul li a {
+        color: rgb(199, 168, 228);
+    }
+
+    nav ul li a:hover {
+        color: rgb(220, 206, 234);
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+
+}
