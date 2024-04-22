@@ -7,7 +7,7 @@
 nav {
     display: flex;
     background-color: var(--pink);
-    color: rgb(224, 224, 224);
+    color: rgb(39, 22, 61);
     padding: 6px 0;
     justify-content: space-around;
     align-items: center;
@@ -132,11 +132,11 @@ nav ul li a:hover {
     }
 
     nav ul li a {
-        color: rgb(199, 168, 228);
+        color: rgb(229, 229, 229);
     }
 
     nav ul li a:hover {
-        color: rgb(220, 206, 234);
+        color: rgb(255, 255, 255);
     }
 
     .menu-toggle {
