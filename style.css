@@ -117,6 +117,7 @@ body {
 
 /* navbar */
 .mynavbar {
+    position: sticky;
     background-color: rgba(255, 255, 255, 0.7) !important;
     backdrop-filter: blur(2px);
 }
