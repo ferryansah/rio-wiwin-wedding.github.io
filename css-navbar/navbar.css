@@ -7,7 +7,7 @@
 nav {
     display: flex;
     background-color: var(--pink);
-    color: rgb(46, 24, 66);
+    color: rgb(224, 224, 224);
     padding: 6px 0;
     justify-content: space-around;
     align-items: center;
