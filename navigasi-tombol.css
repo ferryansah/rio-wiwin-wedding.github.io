@@ -1,0 +1,37 @@
+@media screen and (max-width: 600px) {
+    nav ul {
+        position: absolute;
+        bottom: 0;
+        /* height: 100vh; */
+        width: 50%;
+        background-color: rgb(91, 19, 159);
+        justify-content: space-evenly;
+        flex-direction: row;
+        padding: 20px;
+        align-items: center;
+        /* transform: translateX(100%); */
+        opacity: 1;
+        transition: all 1s;
+    }
+
+        nav {
+            display: flex;
+            background-color: var(--pink);
+            color: rgb(46, 24, 66);
+            padding: 6px 0;
+            justify-content: space-around;
+            align-items: center;
+        }
+    
+        nav ul {
+            display: flex;
+            justify-content: space-between;
+            width: 40%;
+            list-style: none;
+        }
+    
+        nav ul li a {
+            text-decoration: none;
+            color: rgb(46, 24, 66);
+        }
+}
